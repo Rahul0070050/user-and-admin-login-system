@@ -1,0 +1,39 @@
+<div class="table">
+    <div class="search-section">
+        <input type="text" id="search">
+        <input type="button" value="search" name="" id="search-btn">
+    </div>
+    <table>
+        <th>
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    username
+                </td>
+                <td>
+                    email
+                </td>
+                <td>edit</td>
+                <td>delete</td>
+            </tr>
+        </th>
+        <tbody id="table-body">
+            {{#each data}}
+            <tr>
+                <td id="id" hidden>{{_id}}</td>
+                <td id="name">{{name}}</td>
+                <td id="username">{{username}}</td>
+                <td id="email">{{email}}</td>
+                <td id="id" hidden>{{_id}}</td>
+                <td><a href="/admin/edit/{{_id}}" class="btn">edit</a></td>
+                <td><button id="delete-user" delete-user="{{_id}}" class="btn dlt">delete</button></td>
+            </tr>
+             {{!-- onclick="return confirm('do you want to delete {{username}}')"  --}}
+            {{!-- onclick="deleteUser()" --}}
+            {{/each}}
+        </tbody>
+    </table>
+
+</div>

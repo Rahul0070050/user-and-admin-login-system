@@ -1,0 +1,31 @@
+<div class="container-fluid login user">
+    <form>
+        <h2>User Signup</h2>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" class="form-control" value="rahul" id="name" name="name" onkeyup="validateName()"
+                aria-describedby="emailHelp">
+            <small id="name-error" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">User Name</label>
+            <input type="text" class="form-control" value="rahul" id="user-name" name="username" onkeyup="validateUserName()"
+                aria-describedby="emailHelp">
+            <small id="user-name-error" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" value="rahulor2000@gmail.com" id="email" onkeyup="validateEmail()"
+                aria-describedby="emailHelp">
+            <small id="email-error" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" name="password" class="form-control" value="rahul" onkeyup="validatePassword()" id="password">
+            <small id="password-err" class="form-text text-muted"></small>
+        </div>
+        <div class="mt-4"></div>
+        <button type="submit" id="signup-btn" class="btn">Submit</button>
+        <a href="/user/login" class="float-right mr-4 mt-3 text-white">Login</a>
+    </form>
+</div>

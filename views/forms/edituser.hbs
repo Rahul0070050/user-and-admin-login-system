@@ -1,0 +1,25 @@
+<div class="edit-user-data">
+    <form>
+        <h1>Edit user data</h1>
+        <div class="form-group">
+            <label for="name">name</label><br>
+            <input type="text" name="name" onkeyup="validateName()" id="name" class="form-control" value="{{result.name}}">
+            <small id="name-error"></small>
+        </div>
+        <div class="form-group">
+            <label for="name">username</label><br>
+            <input type="text" name="username" id="user-name" onkeyup="validateUserName()" class="form-control" value="{{result.username}}">
+            <small id="user-name-error"></small>
+        </div>
+        <div class="form-group">
+            <label for="name">email</label><br>
+            <input type="email" name="email" id="email" onkeyup="validateEmail()" class="form-control"  value="{{result.email}}">
+            <small id="email-error"></small>
+            <input type="text" value="{{result._id}}" hidden name="_id" id="id">
+        </div>
+        <div class="submit">
+            <a href="/admin/submit" id="editUser-btn" class="btn">submit</a>
+            <a href="/admin" class="btn float-right mr-3">home</a>
+        </div>
+    </form>
+</div>

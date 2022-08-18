@@ -1,0 +1,273 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.index {
+  background-image: url('../images/login\ background.jpg');
+  text-transform: capitalize;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.index .text h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20rem;
+  height: 10rem;
+}
+
+.btns a {
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: larger;
+  font-weight: 700;
+  color: aliceblue;
+  background-color: chocolate;
+  padding: 0.5rem 1.5rem !important;
+  border: none;
+  border-radius: 25px;
+}
+
+/* user */
+.user {
+  background-color: #bc6c25 !important;
+}
+
+/* user */
+
+/* admin */
+.admin {
+  background-color: #219ebc !important;
+}
+
+.admin form {
+  background-color: #8ecae6 !important;
+}
+
+.admin form button {
+  background-color: #fb8500 !important;
+}
+
+/* admin */
+/* user login */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh !important;
+}
+
+.login form {
+  border-radius: 15px;
+  width: 40rem;
+  height: fit-content;
+  padding: 2rem !important;
+  background-color: #DDA15E;
+  color: #283618;
+}
+
+.login form h2 {
+  margin-left: 1rem !important;
+  margin: 1rem !important;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.login form input {
+  border-radius: 5rem;
+  padding: 1rem !important;
+  font-size: larger;
+}
+
+.login form label {
+  margin-left: 1rem !important;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.login form small {
+  margin-left: 1rem !important;
+  color: white !important;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.login form button {
+  background-color: #bc6c25;
+  color: white;
+}
+
+.login .form-group {
+  margin-bottom: 1rem !important;
+}
+
+.login form button {
+  padding: 0.5rem 2rem !important;
+  margin-left: 1rem !important;
+}
+
+/* user login */
+
+/* user navbar */
+nav {
+  height: 5rem;
+  font-size: x-large;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+nav>a {
+  font-size: xx-large !important;
+  font-weight: 600;
+}
+
+nav ul li {
+  margin: 0 1rem !important;
+}
+
+/* user navbar */
+/* user home */
+.user-home {
+  height: 91vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.user-home h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-decoration: underline;
+  letter-spacing: 0.2rem;
+  color: #457b9d;
+  margin-bottom: 6rem !important;
+  font-weight: 600;
+}
+
+.user-home h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.user-home h1 span {
+  color: #bc6c25;
+}
+
+/* user home */
+
+/* admin page user table */
+.table {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.table .search-section {
+  padding: 1rem 0 !important;
+}
+.table .search-section input {
+  padding: 0.5rem !important;
+  border-radius: 15px;
+  font-size: 1.4rem;
+}
+
+.table .search-section input:nth-child(2) {
+  padding: 0.5 3rem !important;
+}
+
+table,
+th,
+td {
+  border: 0.7px solid black;
+}
+
+td {
+  width: 3rem !important;
+  padding: 1rem 2rem !important;
+}
+
+table.pass {
+  text-overflow: ellipsis;
+}
+
+table button,table a {
+  padding: 0.5rem 1rem !important;
+  background-color: #DDA15E !important;
+}
+
+/* admin page user table */
+
+/* edit-user */
+.edit-user-data {
+  background-color: #457b9d;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.edit-user-data a {
+  padding: 0.5rem 1rem !important;
+  background-color: #219ebc;
+}
+
+.edit-user-data form {
+  background-color: #ffafcc;
+  padding: 1rem 5rem !important;
+  border-radius: 2rem;
+}
+
+.edit-user-data form>div {
+  margin: 1rem 0 !important;
+}
+
+.edit-user-data .form-group {
+  margin: 0 !important;
+}
+
+.edit-user-data form input {
+  width: 30rem;
+  height: 3rem;
+  padding-left: 1rem !important;
+  border-radius: 15rem;
+}
+
+.edit-user-data form label {
+  margin-left: 1rem !important;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.edit-user-data small {
+  margin-left: 1rem !important;
+}
+
+.edit-user-data form a {
+  margin-left: 1rem !important;
+  font-size: larger;
+  background-color: #ffb703;
+}
+
+/* edit-user */
